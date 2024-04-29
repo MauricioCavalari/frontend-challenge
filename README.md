@@ -13,7 +13,7 @@ Este projeto Angular 16 utiliza Node v18.20.2 como ambiente de desenvolvimento l
 
 1. Clone o repositório para o seu diretório de projetos:
     ```
-    cd [Nome do diretório do projeto]](https://github.com/MauricioCavalari/frontend-challenge.git)
+    git clone https://github.com/MauricioCavalari/frontend-challenge.git
     ```
 
 2. Instale as dependências do projeto:
