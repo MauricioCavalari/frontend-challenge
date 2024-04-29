@@ -1,0 +1,30 @@
+<div class="card">
+  <h2>Lista de Repositórios {{ login }}:</h2>
+
+  <div class="sort-options">
+    <label for="sort-by">Ordenar por: </label>
+    <select class="primary-filter" (change)="onSortChange($event)" id="sort-by">
+      <option value="none">Nenhum</option>
+      <option value="stars">Estrelas</option>
+      <option value="name">Nome</option>
+    </select>
+
+    <label for="sort-order">Classificação: </label>
+    <button class="primary-filter" (click)="onSortOrderChange('asc')" id="sort-order-asc"><span>Crescente</span></button>
+    <button class="primary-filter" (click)="onSortOrderChange('desc')" id="sort-order-desc">Decrescente</button>
+  </div>
+
+  <ul>
+    <li *ngFor="let repo of repositories">
+      <h3>{{ repo.full_name }}</h3>
+      <p>{{ repo.description }}</p>
+      <hr>
+    </li>
+  </ul>
+
+
+</div>
+
+<footer>
+  <button class="primary-text" (click)="goToHome()">Voltar para o início</button>
+</footer>

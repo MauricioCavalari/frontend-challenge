@@ -1,0 +1,21 @@
+<div class="card">
+  <div class="card-img">
+      <img src="{{ userData.avatar_url }}">
+  </div>
+  <div class="desc">
+      <h6 class="primary-text">{{ userData.name }}</h6>
+      <p class="secondary-text">Usuário: {{ userData.login }}</p>
+      <p class="secondary-text">Descrição: {{ userData.bio }}</p>
+      <p class="secondary-text">Seguidores: {{ userData.followers }}</p>
+      <p class="secondary-text">Seguindo: {{ userData.following }}</p>
+      <p class="secondary-text">Estrelas: {{ totalStars }}</p>
+      <p class="secondary-text">Localização: {{ userData.location }}</p>
+  </div>
+  <div>
+    <button class="primary-text" (click)="goToDetails()">Repositórios</button>
+  </div>
+</div>
+
+
+
+
